@@ -9,13 +9,42 @@
   </head>
 
   <body>
-
-
-
-
-
-    <!-- <script src='js/guessing-game.js'></script> -->
-    <!-- uncomment the script tag above when you are ready to add JavaScript to your document -->
+    <header>
+      <h1 id="title">Guessing Game</h1>
+      <h3 id="subtitle">Guess a number between 1 and 100</h3>
+    </header>
+    <div id="previousGuesses">
+      <div class="prevGuess" id="guess1">-</div>
+      <div class="prevGuess" id="guess2">-</div>
+      <div class="prevGuess" id="guess3">-</div>
+      <div class="prevGuess" id="guess4">-</div>
+      <div class="prevGuess" id="guess5">-</div>
+    </div>
+    <div id="guess">
+      <div id="input">
+        <input type="text" maxlength="3">
+      </div>
+      <div id="submit">
+        <button id="submitButton">guess!</button>
+      </div>
+    </div>
+    <div id="buttons">
+      <button id="newGame">new game</button>
+      <button id="getHint">hint</button>
+    </div>
+    <div id="hints">
+      <div class="hint"></div>
+      <div class="hint"></div>
+      <div class="hint"></div>
+      <div class="hint"></div>
+      <div class="hint"></div>
+      <div class="hint"></div>
+      <div class="hint"></div>
+      <div class="hint"></div>
+      <div class="hint"></div>
+      <div class="hint"></div>
+    </div>
+    <script src='guessing-game.js'></script>
   </body>
 
 </html>
