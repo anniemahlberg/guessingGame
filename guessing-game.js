@@ -53,6 +53,8 @@ function placeInput() {
             continue;
         }
     }
+    
+    inputField.value = ""
 }
 
 guessButton.addEventListener('click', placeInput)
