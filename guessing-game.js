@@ -111,6 +111,7 @@ function startNewGame() {
     title.innerText = "Guessing Game"
     subtitle.innerText = "Guess a number between 1 and 100"
     generateWinningNumber();
+    hintButton.disabled = false;
 }
 
 newGameButton.addEventListener('click', startNewGame)
@@ -132,6 +133,8 @@ function getHints() {
             hintDiv[i].innerText = randomNumber();
         }
     }
+
+    hintButton.disabled = true;
 }
 
 hintButton.addEventListener('click', getHints)

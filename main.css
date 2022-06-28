@@ -131,3 +131,7 @@ button:active {
     padding: 5px;
     font-size: 20px;
 }
+
+#getHint:disabled {
+    background-color: rgba(250, 246, 241, 0.391);
+}
